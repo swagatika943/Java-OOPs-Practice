@@ -5,6 +5,16 @@ public class StudentResult {
     int rollno;
     int[] marks;
     public StudentResult(String name, int rollno, int[] marks){
+        if(marks.length != 5){
+            System.out.println("Enter exactly 5 subs");
+            return;
+        }
+        for(int i=0; i<marks.length; i++){
+            if(marks[i]<0 || marks[i]>100){
+                System.out.println("Invalid Marks");
+                return;
+            }
+        }
         this.name=name;
         this.rollno=rollno;
         this.marks=marks;
