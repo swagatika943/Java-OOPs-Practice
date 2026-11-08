@@ -9,9 +9,13 @@ public class main {
 //        b.details();
 
         //Emplyoee Sal
-        EmployeeSalary emp1 = new EmployeeSalary(101, "Swagatika", 30000);
+//        EmployeeSalary emp1 = new EmployeeSalary(101, "Swagatika", 30000);
+//
+//        emp1.TotalList();
 
-        emp1.TotalList();
-
+        //Student Result
+        int[] marks = {89, 90, 87, 93, 96};
+        StudentResult s = new StudentResult("Amrita", 39, marks);
+        s.displayResult();
     }
 }
