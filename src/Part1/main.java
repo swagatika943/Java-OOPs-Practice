@@ -14,8 +14,15 @@ public class main {
 //        emp1.TotalList();
 
         //Student Result
-        int[] marks = {89, 90, 87, 93, 96};
-        StudentResult s = new StudentResult("Amrita", 39, marks);
-        s.displayResult();
+//        int[] marks = {89, 90, 87, 93, 96};
+//        StudentResult s = new StudentResult("Amrita", 39, marks);
+//        s.displayResult();
+
+        //Product Inventory
+        ProductInventory p = new ProductInventory(100, "PC", 70000, 4);
+        p.displayProductDetails();
+        System.out.println("\nAfter Upadte Quantity:");
+        p.updateQuantity(2);
+        p.displayProductDetails();
     }
 }
