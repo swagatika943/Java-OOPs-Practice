@@ -5,17 +5,17 @@ public class Main {
         System.out.println("------- Payment Processing System -------");
         System.out.println();
 
-        Payment[] payments = new Payment[3];
+        Payment[] p = new Payment[3];
 
-        payments[0] = new CreditCard(5000, "123456789");
-        payments[1] = new UPI(2500, "swagatika@upi");
-        payments[2] = new NetBanking(10000, "SBI");
+        p[0] = new CreditCard(5000, "123456789");
+        p[1] = new UPI(2500, "swagatika@upi");
+        p[2] = new NetBanking(10000, "SBI");
 
-        for (int i = 0; i < payments.length; i++) {
+        for (int i = 0; i < p.length; i++) {
 
-            payments[i].displayAmt();
+            p[i].displayAmt();
 
-            payments[i].pay();
+            p[i].pay();
 
             System.out.println();
         }
